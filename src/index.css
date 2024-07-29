@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fafafa;
+}
+
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #303540;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #494e59;
+}
+
+h1,
+h2,
+h3 {
+  color: #303540;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 0;
+  opacity: 0;
+  transition: width 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.line-active {
+  width: 100%;
+  opacity: 1;
+}
+
+.transition-opacity {
+  transition: opacity 1s ease-in-out;
+}
